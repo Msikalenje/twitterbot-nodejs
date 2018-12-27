@@ -61,7 +61,7 @@ function tweetEvent (tweet) {
 }
 
 // This function finds the latest tweet with the #hashtag, and retweets it.
-function retweetLatest () {
+function retweetLatest (shemaiko2018) {
   T.get('search/tweets', hastagSearch, function (error, data) {
     var tweets = data.statuses
     for (var i = 0; i < tweets.length; i++) {
